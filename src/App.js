@@ -10,7 +10,7 @@ function App() {
   const [showLayoutGap, setShowLayoutGap] = useState(true);
   const [showInnerPadding, setShowInnerPadding] = useState(true);
   const [showImage, setShowImage] = useState(true);
-  const [showTags, setShowTags] = useState(true);
+  const [showTags, setShowTags] = useState(false);
   const [showPretitle, setShowPretitle] = useState(true);
   const [showIcons, setShowIcons] = useState(false);
   const [manualCardTitleFontSize, setManualCardTitleFontSize] = useState("");
