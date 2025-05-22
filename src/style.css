@@ -1,16 +1,321 @@
-@font-face {
-  font-family: 'MyFont';
-  src: url('./assets/fonts/NVIDIASans_W_Rg.woff2') format('woff2'),
-       url('./assets/fonts/NVIDIASans_W_MdIt.woff2') format('woff2'),
-       url('./assets/fonts/NVIDIASans_W_Md.woff2') format('woff2'),
-       url('./assets/fonts/NVIDIASans_W_LtIt.woff2') format('woff2'),
-       url('./assets/fonts/NVIDIASans_W_Lt.woff2') format('woff2'),
-       url('./assets/fonts/NVIDIASans_W_It.woff2') format('woff2'),
-       url('./assets/fonts/NVIDIASans_W_BdIt.woff2') format('woff2'),
-       url('./assets/fonts/NVIDIASans_W_Bd.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+@supports not (font-variation-settings: normal) {
+  @font-face {
+      font-family:NVIDIA;
+      font-style: normal;
+      font-weight: 300;
+      src: url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/GLOBAL/NVIDIASans_W_Lt.woff) format("woff"),url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/GLOBAL/NVIDIASans_W_Lt.woff2) format("woff2")
+  }
+
+  @font-face {
+      font-family: NVIDIA;
+      font-style: normal;
+      font-weight: 400;
+      src: url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/GLOBAL/NVIDIASans_W_Rg.woff) format("woff"),url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/GLOBAL/NVIDIASans_W_Rg.woff2) format("woff2")
+  }
+
+  @font-face {
+      font-family: NVIDIA;
+      font-style: normal;
+      font-weight: 500;
+      src: url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/GLOBAL/NVIDIASans_W_Md.woff) format("woff"),url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/GLOBAL/NVIDIASans_W_Md.woff2) format("woff2")
+  }
+
+  @font-face {
+      font-family: NVIDIA;
+      font-style: normal;
+      font-weight: 700;
+      src: url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/GLOBAL/NVIDIASans_W_Bd.woff) format("woff"),url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/GLOBAL/NVIDIASans_W_Bd.woff2) format("woff2")
+  }
+
+  @font-face {
+      font-family: NVIDIA-NALA;
+      font-style: normal;
+      font-weight: 300;
+      src: url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/NALA/NVIDIASans_NALA_W_Lt.woff) format("woff"),url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/NALA/NVIDIASans_NALA_W_Lt.woff2) format("woff2")
+  }
+
+  @font-face {
+      font-family: NVIDIA-NALA;
+      font-style: normal;
+      font-weight: 400;
+      src: url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/NALA/NVIDIASans_NALA_W_Rg.woff) format("woff"),url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/NALA/NVIDIASans_NALA_W_Rg.woff2) format("woff2")
+  }
+
+  @font-face {
+      font-family: NVIDIA-NALA;
+      font-style: normal;
+      font-weight: 500;
+      src: url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/NALA/NVIDIASans_NALA_W_Md.woff) format("woff"),url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/NALA/NVIDIASans_NALA_W_Md.woff2) format("woff2")
+  }
+
+  @font-face {
+      font-family: NVIDIA-NALA;
+      font-style: normal;
+      font-weight: 700;
+      src: url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/NALA/NVIDIASans_NALA_W_Bd.woff) format("woff"),url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/NALA/NVIDIASans_NALA_W_Bd.woff2) format("woff2")
+  }
+
+  @font-face {
+      font-family: NVIDIA-EMEA;
+      font-style: normal;
+      font-weight: 300;
+      src: url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/EMEA/NVIDIASans_EMEA_W_Lt.woff) format("woff"),url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/EMEA/NVIDIASans_EMEA_W_Lt.woff2) format("woff2")
+  }
+
+  @font-face {
+      font-family: NVIDIA-EMEA;
+      font-style: normal;
+      font-weight: 400;
+      src: url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/EMEA/NVIDIASans_EMEA_W_Rg.woff) format("woff"),url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/EMEA/NVIDIASans_EMEA_W_Rg.woff2) format("woff2")
+  }
+
+  @font-face {
+      font-family: NVIDIA-EMEA;
+      font-style: normal;
+      font-weight: 500;
+      src: url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/EMEA/NVIDIASans_EMEA_W_Md.woff) format("woff"),url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/EMEA/NVIDIASans_EMEA_W_Md.woff2) format("woff2")
+  }
+
+  @font-face {
+      font-family: NVIDIA-EMEA;
+      font-style: normal;
+      font-weight: 700;
+      src: url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/EMEA/NVIDIASans_EMEA_W_Bd.woff) format("woff"),url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/EMEA/NVIDIASans_EMEA_W_Bd.woff2) format("woff2")
+  }
+
+  @font-face {
+      font-family: NVIDIA-RU;
+      font-style: normal;
+      font-weight: 300;
+      src: url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/RU/NVIDIASans_CYR_W_Lt.woff) format("woff"),url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/RU/NVIDIASans_CYR_W_Lt.woff2) format("woff2")
+  }
+
+  @font-face {
+      font-family: NVIDIA-RU;
+      font-style: normal;
+      font-weight: 400;
+      src: url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/RU/NVIDIASans_CYR_W_Rg.woff) format("woff"),url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/RU/NVIDIASans_CYR_W_Rg.woff2) format("woff2")
+  }
+
+  @font-face {
+      font-family: NVIDIA-RU;
+      font-style: normal;
+      font-weight: 500;
+      src: url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/RU/NVIDIASans_CYR_W_Md.woff) format("woff"),url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/RU/NVIDIASans_CYR_W_Md.woff2) format("woff2")
+  }
+
+  @font-face {
+      font-family: NVIDIA-RU;
+      font-style: normal;
+      font-weight: 700;
+      src: url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/RU/NVIDIASans_CYR_W_Bd.woff) format("woff"),url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/RU/NVIDIASans_CYR_W_Bd.woff2) format("woff2")
+  }
+
+  @font-face {
+      font-family: NVIDIA-APAC;
+      font-style: normal;
+      font-weight: 300;
+      src: url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/APAC/NVIDIASans_APAC_W_Lt.woff) format("woff"),url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/APAC/NVIDIASans_APAC_W_Lt.woff2) format("woff2")
+  }
+
+  @font-face {
+      font-family: NVIDIA-APAC;
+      font-style: normal;
+      font-weight: 400;
+      src: url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/APAC/NVIDIASans_APAC_W_Rg.woff) format("woff"),url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/APAC/NVIDIASans_APAC_W_Rg.woff2) format("woff2")
+  }
+
+  @font-face {
+      font-family: NVIDIA-APAC;
+      font-style: normal;
+      font-weight: 500;
+      src: url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/APAC/NVIDIASans_APAC_W_Md.woff) format("woff"),url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/APAC/NVIDIASans_APAC_W_Md.woff2) format("woff2")
+  }
+
+  @font-face {
+      font-family: NVIDIA-APAC;
+      font-style: normal;
+      font-weight: 700;
+      src: url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/APAC/NVIDIASans_APAC_W_Bd.woff) format("woff"),url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/APAC/NVIDIASans_APAC_W_Bd.woff2) format("woff2")
+  }
+
+  @font-face {
+      font-family: NVIDIA-CN;
+      font-style: normal;
+      font-weight: 300;
+      src: url(https://images.nvidia.cn/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/APAC/NVIDIASans_APAC_W_Lt.woff) format("woff"),url(https://images.nvidia.cn/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/APAC/NVIDIASans_APAC_W_Lt.woff2) format("woff2")
+  }
+
+  @font-face {
+      font-family: NVIDIA-CN;
+      font-style: normal;
+      font-weight: 400;
+      src: url(https://images.nvidia.cn/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/APAC/NVIDIASans_APAC_W_Rg.woff) format("woff"),url(https://images.nvidia.cn/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/APAC/NVIDIASans_APAC_W_Rg.woff2) format("woff2")
+  }
+
+  @font-face {
+      font-family: NVIDIA-CN;
+      font-style: normal;
+      font-weight: 500;
+      src: url(https://images.nvidia.cn/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/APAC/NVIDIASans_APAC_W_Md.woff) format("woff"),url(https://images.nvidia.cn/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/APAC/NVIDIASans_APAC_W_Md.woff2) format("woff2")
+  }
+
+  @font-face {
+      font-family: NVIDIA-CN;
+      font-style: normal;
+      font-weight: 700;
+      src: url(https://images.nvidia.cn/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/APAC/NVIDIASans_APAC_W_Bd.woff) format("woff"),url(https://images.nvidia.cn/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/APAC/NVIDIASans_APAC_W_Bd.woff2) format("woff2")
+  }
+}
+
+@supports(font-variation-settings: normal) {
+  @font-face {
+      font-display:swap;
+      font-family: NVIDIA-NALA;
+      font-stretch: 25% 151%;
+      font-style: normal;
+      font-weight: 100 1000;
+      src: url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/NALA/var/NVIDIASansVF_NALA_W_Wght.woff2) format("woff2 supports variations"),url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/NALA/var/NVIDIASansVF_NALA_W_Wght.woff2) format("woff2-variations")
+  }
+
+  @font-face {
+      font-display: swap;
+      font-family: NVIDIA-NALA;
+      font-stretch: 25% 151%;
+      font-style: italic;
+      font-weight: 100 1000;
+      src: url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/NALA/var/NVIDIASansVF_Wght_NALA_W_Italic.woff2) format("woff2 supports variations"),url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/NALA/var/NVIDIASansVF_Wght_NALA_W_Italic.woff2) format("woff2-variations")
+  }
+
+  @font-face {
+      font-display: swap;
+      font-family: NVIDIA-EMEA;
+      font-stretch: 25% 151%;
+      font-style: normal;
+      font-weight: 100 1000;
+      src: url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/EMEA/var/NVIDIASansVF_EMEA_W_Wght.woff2) format("woff2 supports variations"),url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/EMEA/var/NVIDIASansVF_EMEA_W_Wght.woff2) format("woff2-variations")
+  }
+
+  @font-face {
+      font-display: swap;
+      font-family: NVIDIA-EMEA;
+      font-stretch: 25% 151%;
+      font-style: italic;
+      font-weight: 100 1000;
+      src: url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/EMEA/var/NVIDIASansVF_Wght_EMEA_W_Italic.woff2) format("woff2 supports variations"),url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/EMEA/var/NVIDIASansVF_Wght_EMEA_W_Italic.woff2) format("woff2-variations")
+  }
+
+  @font-face {
+      font-display: swap;
+      font-family: NVIDIA-RU;
+      font-stretch: 25% 151%;
+      font-style: normal;
+      font-weight: 100 1000;
+      src: url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/RU/var/NVIDIASansVF_CYR_W_Wght.woff2) format("woff2 supports variations"),url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/RU/var/NVIDIASansVF_CYR_W_Wght.woff2) format("woff2-variations")
+  }
+
+  @font-face {
+      font-display: swap;
+      font-family: NVIDIA-RU;
+      font-stretch: 25% 151%;
+      font-style: italic;
+      font-weight: 100 1000;
+      src: url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/RU/var/NVIDIASansVF_Wght_CYR_W_Italic.woff2) format("woff2 supports variations"),url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/RU/var/NVIDIASansVF_Wght_CYR_W_Italic.woff2) format("woff2-variations")
+  }
+
+  @font-face {
+      font-display: swap;
+      font-family: NVIDIA-APAC;
+      font-stretch: 25% 151%;
+      font-style: normal;
+      font-weight: 100 1000;
+      src: url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/APAC/var/NVIDIASansVF_APAC_W_Wght.woff2) format("woff2 supports variations"),url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/APAC/var/NVIDIASansVF_APAC_W_Wght.woff2) format("woff2-variations")
+  }
+
+  @font-face {
+      font-display: swap;
+      font-family: NVIDIA-APAC;
+      font-stretch: 25% 151%;
+      font-style: italic;
+      font-weight: 100 1000;
+      src: url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/APAC/var/NVIDIASansVF_Wght_APAC_W_Italic.woff2) format("woff2 supports variations"),url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/APAC/var/NVIDIASansVF_Wght_APAC_W_Italic.woff2) format("woff2-variations")
+  }
+
+  @font-face {
+      font-display: swap;
+      font-family: NVIDIA-CN;
+      font-stretch: 25% 151%;
+      font-style: normal;
+      font-weight: 100 1000;
+      src: url(https://images.nvidia.cn/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/APAC/var/NVIDIASansVF_APAC_W_Wght.woff2) format("woff2 supports variations"),url(https://images.nvidia.cn/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/APAC/var/NVIDIASansVF_APAC_W_Wght.woff2) format("woff2-variations")
+  }
+
+  @font-face {
+      font-display: swap;
+      font-family: NVIDIA-CN;
+      font-stretch: 25% 151%;
+      font-style: italic;
+      font-weight: 100 1000;
+      src: url(https://images.nvidia.cn/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/APAC/var/NVIDIASansVF_Wght_APAC_W_Italic.woff2) format("woff2 supports variations"),url(https://images.nvidia.cn/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/APAC/var/NVIDIASansVF_Wght_APAC_W_Italic.woff2) format("woff2-variations")
+  }
+
+  @font-face {
+      font-display: swap;
+      font-family: NVIDIA;
+      font-stretch: 25% 151%;
+      font-style: normal;
+      font-weight: 100 1000;
+      src: url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/GLOBAL/var/NVIDIASansVF_W_Wght.woff2) format("woff2 supports variations"),url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/GLOBAL/var/NVIDIASansVF_W_Wght.woff2) format("woff2-variations")
+  }
+
+  @font-face {
+      font-display: swap;
+      font-family: NVIDIA;
+      font-stretch: 25% 151%;
+      font-style: italic;
+      font-weight: 100 1000;
+      src: url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/GLOBAL/var/NVIDIASansVF_Wght_W_Italic.woff2) format("woff2 supports variations"),url(https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/nvidia-sans/GLOBAL/var/NVIDIASansVF_Wght_W_Italic.woff2) format("woff2-variations")
+  }
+}
+
+@supports not (font-variation-settings: normal) {
+  @font-face {
+      font-family:Heebo;
+      font-style: normal;
+      font-weight: 300;
+      src: url(https://images.nvidia.cn/etc/designs/nvidiaGDC/clientlibs_base/fonts/heebo/Heebo-Light.ttf) format("ttf")
+  }
+
+  @font-face {
+      font-family: Heebo;
+      font-style: normal;
+      font-weight: 400;
+      src: url(https://images.nvidia.cn/etc/designs/nvidiaGDC/clientlibs_base/fonts/heebo/Heebo-Regular.ttf) format("ttf")
+  }
+
+  @font-face {
+      font-family: Heebo;
+      font-style: normal;
+      font-weight: 500;
+      src: url(https://images.nvidia.cn/etc/designs/nvidiaGDC/clientlibs_base/fonts/heebo/Heebo-Medium.ttf) format("ttf")
+  }
+
+  @font-face {
+      font-family: Heebo;
+      font-style: normal;
+      font-weight: 700;
+      src: url(https://images.nvidia.cn/etc/designs/nvidiaGDC/clientlibs_base/fonts/heebo/Heebo-Bold.ttf) format("ttf")
+  }
+}
+
+@supports(font-variation-settings: normal) {
+  @font-face {
+      font-family:Heebo;
+      font-stretch: 25% 151%;
+      font-style: normal;
+      font-weight: 100 1000;
+      src: url(https://images.nvidia.cn/etc/designs/nvidiaGDC/clientlibs_base/fonts/heebo/Heebo-VariableFont_wght.ttf) format("truetype supports variations"),url(https://images.nvidia.cn/etc/designs/nvidiaGDC/clientlibs_base/fonts/heebo/Heebo-VariableFont_wght.ttf) format("truetype-variations")
+  }
 }
 
 body, html, * {
@@ -785,7 +1090,8 @@ h1.card-title, h2.card-title, h3.card-title, h4.card-title, h5.card-title, h6.ca
   display: none !important;
 }
 
-.card-section-alt .guide-padding-top {
+.card-section-alt .guide-padding-top,
+.card-section-alt .guide-padding-bottom {
   display: block !important;
 }
 
@@ -799,7 +1105,8 @@ h1.card-title, h2.card-title, h3.card-title, h4.card-title, h5.card-title, h6.ca
   background: transparent !important;
 }
 
-.card-section-alt .guide-padding-top.guide-padding-on {
+.card-section-alt .guide-padding-top.guide-padding-on,
+.card-section-alt .guide-padding-bottom.guide-padding-on {
   background: rgba(209, 42, 139, 0.4) !important;
 }
 
@@ -842,7 +1149,7 @@ h1.card-title, h2.card-title, h3.card-title, h4.card-title, h5.card-title, h6.ca
 /* Special layout gap for alternate section */
 .card-section-alt .card-grid-alt {
   column-gap: 30px;
-  row-gap: 0;
+  row-gap: 30px;
 }
 
 .layout-gap-alt {
