@@ -1,7 +1,10 @@
 import React, { useState, useRef, useLayoutEffect, useEffect } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
 import "./style.css";
 import Card from "./components/Card";
 import ControlsPanel from "./components/ControlsPanel";
+import AppBuilder from "./AppBuilder";
+import AppMore from "./AppMore";
 import { CARD_DATA, SPACING_OPTIONS } from "./constants/cardData";
 import { getSectionTitleFontSize } from "./utils/fontSizeUtils";
 
@@ -62,7 +65,10 @@ function App() {
 
 
 
-  return (
+  const location = useLocation();
+  
+  // Main content component
+  const MainContent = () => (
     <div className="container">
       <div className="main-layout">
         <div className="controls-panel-wrapper">
@@ -233,6 +239,30 @@ function App() {
           </div>
         </div>
       </div>
+    </div>
+  );
+
+  return (
+    <div>
+      {/* Navigation Bar */}
+      <div className="navigation-bar">
+        <button className="nav-btn" onClick={() => window.location.href = '/'}>
+          Home
+        </button>
+        <button className="nav-btn" onClick={() => window.location.href = '/builder'}>
+          Section Builder
+        </button>
+        <button className="nav-btn" onClick={() => window.location.href = '/more'}>
+          More
+        </button>
+      </div>
+
+      {/* Routes */}
+      <Routes>
+        <Route path="/" element={<MainContent />} />
+        <Route path="/builder" element={<AppBuilder />} />
+        <Route path="/more" element={<AppMore />} />
+      </Routes>
     </div>
   );
 }
