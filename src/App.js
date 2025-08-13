@@ -60,10 +60,7 @@ function App() {
     }
   }, [cardSpacing, showLayoutGap, showInnerPadding, showImage, showTags, showPretitle, manualCardTitleFontSize]);
 
-  // Use manual section title font size if set
-  const effectiveSectionTitleFontSize = manualSectionTitleFontSize && !isNaN(Number(manualSectionTitleFontSize))
-    ? Number(manualSectionTitleFontSize)
-    : sectionTitleFontSize;
+
 
   return (
     <div className="container">

@@ -34,7 +34,6 @@ const Card = forwardRef(function Card({
 
   // --- Dynamic headline font size logic ---
   const titleRef = useRef(null);
-  const [headlineFontSize, setHeadlineFontSize] = useState(20); // default
   const [padSize, setPadSize] = useState(0);
 
   // Responsive card title font size
@@ -64,12 +63,7 @@ const Card = forwardRef(function Card({
     setPadSize(cardTitleFontSize * 1.25);
   }, [cardTitleFontSize]);
 
-  useLayoutEffect(() => {
-    if (titleRef.current) {
-      const computed = window.getComputedStyle(titleRef.current);
-      setHeadlineFontSize(parseFloat(computed.fontSize));
-    }
-  }, [cardSpacing, manualCardTitleFontSize]);
+
 
   // Helper for layout gap - now using cardTitleFontSize for calculations
   const LayoutGap = ({ type }) => {
