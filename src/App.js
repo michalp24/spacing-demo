@@ -65,7 +65,7 @@ function App() {
 
 
 
-  const location = useLocation();
+
   
   // Main content component
   const MainContent = () => (
