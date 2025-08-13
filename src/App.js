@@ -1,5 +1,5 @@
 import React, { useState, useRef, useLayoutEffect, useEffect } from "react";
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import "./style.css";
 import Card from "./components/Card";
 import ControlsPanel from "./components/ControlsPanel";
