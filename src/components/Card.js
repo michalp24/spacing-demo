@@ -1,4 +1,4 @@
-import React, { useState, useRef, useLayoutEffect, useEffect, forwardRef } from "react";
+import React, { useState, useRef, useEffect, forwardRef } from "react";
 import { getCardTitleFontSize } from "../utils/fontSizeUtils";
 
 const Card = forwardRef(function Card({ 
