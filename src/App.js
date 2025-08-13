@@ -1,5 +1,5 @@
 import React, { useState, useRef, useLayoutEffect, useEffect } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useNavigate } from "react-router-dom";
 import "./style.css";
 import Card from "./components/Card";
 import ControlsPanel from "./components/ControlsPanel";
@@ -68,7 +68,9 @@ function App() {
 
   
   // Main content component
-  const MainContent = () => (
+  const MainContent = () => {
+    console.log('MainContent rendering');
+    return (
     <div className="container">
       <div className="main-layout">
         <div className="controls-panel-wrapper">
@@ -240,19 +242,22 @@ function App() {
         </div>
       </div>
     </div>
-  );
+    );
+  };
+
+  const navigate = useNavigate();
 
   return (
     <div>
       {/* Navigation Bar */}
       <div className="navigation-bar">
-        <button className="nav-btn" onClick={() => window.location.href = '/'}>
+        <button className="nav-btn" onClick={() => navigate('/')}>
           Home
         </button>
-        <button className="nav-btn" onClick={() => window.location.href = '/builder'}>
+        <button className="nav-btn" onClick={() => navigate('/builder')}>
           Section Builder
         </button>
-        <button className="nav-btn" onClick={() => window.location.href = '/more'}>
+        <button className="nav-btn" onClick={() => navigate('/more')}>
           More
         </button>
       </div>
